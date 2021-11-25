@@ -33,7 +33,7 @@
     </div>
 
     <div class="CompanyContainer">
-      Hi there <span style="color:red" id="theName"></span>!! <br>
+      Hi there <span style="color:red" id="theName"></span>!! <br> <!-- Tar namnet från scriptet nedan som hämtades in från index formuläret -->
       I have to much stuff going on now so i  don't have time to work.. <br>
       But hey, here is that dancing baby everybody seems to like..
 
@@ -41,7 +41,6 @@
 
       <script type="text/javascript">
       document.getElementById("theName").innerHTML = window.sessionStorage.getItem('name');
-      document.getElementById("theCompany").innerHTML = window.sessionStorage.getItem('company');
       </script>
     </div>
   </body>
