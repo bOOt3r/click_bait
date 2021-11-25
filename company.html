@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>company</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <style>
+    body {
+      background-image: url('img/bg.jpg');
+      background-size: 30%; /* Simulera lågupplöst bild som loopar */
+      }
+  </style>
+
+  <body>
+    <script src="js/main.js" type="text/javascript">
+    </script>
+
+    <div class="HeadContainer">
+      <div class="HeadImage">
+      <img src="img/n64.jpeg">
+      </div>
+      <div class="HeadText">
+      Welcome to the world wide web of Jonathan!
+      </div>
+
+      <div class="HeadLink">
+        <a class "HeadLink" style="color:#7CFC00" href="index.html">Main Menu</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a style="color:#7CFC00" href="free_money.html">Free Money</a>
+        </div>
+    </div>
+
+    <div class="CompanyContainer">
+      Hi there <span style="color:red" id="theName"></span>!! <br>
+      I have to much stuff going on now so i  don't have time to work.. <br>
+      But hey, here is that dancing baby everybody seems to like..
+
+      <img src="gif/baby.gif" class="CenterPicture">
+
+      <script type="text/javascript">
+      document.getElementById("theName").innerHTML = window.sessionStorage.getItem('name');
+      document.getElementById("theCompany").innerHTML = window.sessionStorage.getItem('company');
+      </script>
+    </div>
+  </body>
+</html>

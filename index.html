@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+
+  <body>
+    <script src="js/main.js" type="text/javascript"></script>
+    <div class="HeadContainer">
+      <div class="HeadImage">
+        <img src="img/n64.jpeg">
+      </div>
+
+      <div class="HeadText">
+        Welcome to the world wide web of Jonathan!
+      </div>
+
+      <div class="HeadLink">
+      <a class "HeadLink" style="color:#7CFC00" href="index.html">Main Menu</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a style="color:#7CFC00" href="free_money.html">Free Money</a>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div id="ContainerSnake">
+        <canvas id="canvas" width="1000" height="600"></canvas>
+        <script src="js/snake.js"></script>
+      </div>
+
+      <div id="ContainerMain">
+        <p class="start"><ins> >>About me<<
+        </p>
+
+        <p class="details">
+          I'm closer to 40 than 30 and like to build <span class="bold black">DOPE
+          </span>
+          internet sites. I really don't have anymore time to talk about me since i need to go to the garage and trim my moped.
+          So here is some bacon ipsum, L8ERz H8TERz!! <br><br>
+          Pork loin boudin cupim shoulder exercitation ground round landjaeger,
+          capicola anim. Anim in ut nisi commodo short ribs. Sunt boudin turducken consectetur,
+          shank pork ball tip mollit tri-tip chicken duis in tenderloin nulla. Quis aute sirloin cupidatat,
+          sausage ham swine.
+          </p>
+      </div>
+
+      <div id="ContainerRight">
+        <div class="RightImage">
+          <img src="img/profile.png" style="width:200px">
+        </div>
+
+        <p class="start"><ins> >>Interests<<
+        </p>
+        <p class="details">
+          I like 2 play NINTENDO! <br>
+          HAng out with friends <br>
+          <span class="bold black">PRODIGY
+          </span> <br>
+          phr34k1ng <br>
+          My dog Bobo!! <br>
+          </p>
+
+        <p class="start"><ins> >>Skillz<<
+        </p>
+        <p class="details">
+          HTML <br>
+          Type 21 words per minute  <br>
+          Snake <br>
+          Windows 3.11
+        </p>
+
+        <p class="start"><ins> >>Linkz<< </p>
+        <p class="details">
+        <a style="color:#7CFC00"; href="https://www.linkedin.com/in/jonathan-lim%C3%A9n-74524686/" target="_blank">www.linkedin.com</a> <br>
+        <a style="color:#7CFC00"; href="https://web.archive.org/web/20010612093610/http://www.altavista.com/">www.altavista.com</a>
+      </div>
+  </div>
+
+  <div class="FootContainer">
+    &nbsp;&nbsp;
+    <form name="companyForm" action="company.html" onsubmit="return validateForm()" method="GET">
+      <marquee style="color:#7CFC00; font-size:30px" direction="right">Fill in the form below to hire me!</marquee>
+      Firstname: <input type="text" name="name" placeholder="Your full name">
+      &nbsp;&nbsp;
+      Company: <input type="text" name="company" placeholder="Preferably Framfab"> <!-- Undvek type email för att göra det lite svårare att verifiera :) -->
+      &nbsp;&nbsp;
+      Electronic mail:  <input type="text" name="email" placeholder="The one with @"">
+      &nbsp;&nbsp;
+      Salary:  <input type="text" name="salary" value="$100,000.00" readonly>
+      &nbsp;&nbsp;
+      <input type="submit" value="Hire me!" onClick="window.sessionStorage.setItem('name', companyForm.name.value)">
+  </form>
+
+
+
+  </div>
+
+  </body>
+</html>
